@@ -6,6 +6,8 @@ from django.urls import reverse_lazy
 #뷰가 경로!!!!
 # Create your views here.
 
+# cjh 수정
+
 def blank(request):
 	return render(request, "blank.html",{})
 
@@ -43,7 +45,3 @@ def panels_wells(request):
 
 class IndexView(TemplateView):
     template_name = 'index.html'
-
-
-
-
