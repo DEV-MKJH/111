@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 # Create your views here.
 
 # cjh 수정
+# cjh 수정 2
 
 def blank(request):
 	return render(request, "blank.html",{})
