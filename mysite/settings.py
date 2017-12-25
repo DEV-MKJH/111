@@ -70,10 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
             ],
 
-            'libraries':{
-                'my_tags': 'sa.my_tags',
 
-            }
         },
     },
 ]
