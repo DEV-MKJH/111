@@ -16,16 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 # url뿐 아니라 include를 import해야 합니다.
 from django.contrib import admin
+# from django.conf import settings
 from sa import views as sa_views
-from django.conf import settings
-
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', sa_views.IndexView.as_view(), name = "index"),
+    url(r'^', sa_views.IndexView.as_view(), name = "index"),
     url(r'^sa/', include('sa.urls')),
     url(r'^accounts/', include('allauth.urls')),
-
+    url(r'^admin/', admin.site.urls),
 ]
-
-
