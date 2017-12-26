@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 
 #뷰가 경로!!!!
 # Create your views here.
-# test 2017.12.26
+# test 2017.12.26 2
 
 def bootstrap_html(request):
 	context = {}
